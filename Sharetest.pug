@@ -1,10 +1,43 @@
-//
-    Created by kim on 6-9-2016.
 doctype html
 html
     head
-        title Testt
-        link(rel='stylesheet',href='http://www.codeproject.com/stylesheet/style.css')
+        <img src="https://cdn.rawgit.com/pugjs/pug-logo/3ea2d3a86c6227020dd5b20743a5aa458808ca4e/SVG/__pug-logo-colour-wide.svg" alt="Pug" style="width:600px;height:100px;">
+        style.
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #000000;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover:not(.active) {
+                background-color: #000000;
+            }
+            .active {
+                background-color: #000000;
+            }
     body
-        h1 Hooooiiii
-        p Dit is een testtttttttttttttt
+        ul
+            li
+                a(href='#Sharetest') Home
+            li
+                a(href='#news') News
+            li
+                a(href='#contact') Contact
+            li(style='float:right')
+                a.active(href='#about') About
+
+    body
+        h1 Welkom op onze site!
+        p Deze site is gemaakt met Jade/Pug.
+
